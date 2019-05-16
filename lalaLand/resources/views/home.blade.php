@@ -2,21 +2,36 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
+    <div class="row">
+        <div class="col-4 p-4">
+            <img src="/img/lion.png"
+                class="rounded-circle"
+                width="250px" height="250px"
+            >
+        </div>
+        <div class="col-8 pt-5">
+            <div>
+                <h1>LoveLove Lion</h1>
             </div>
+            <div class="d-flex">
+                <div class="pr-5"><strong>123</strong> posts</div>
+                <div class="pr-5"><strong>45k</strong> followers</div>
+                <div class="pr-5"><strong>678</strong> following</div>
+            </div>
+            <div class="pt-4 font-weight-bold">Images from KAKAO Co.</div>
+            <div>To embed your selected fonts into a webpage, copy this code into the of your HTML document. Like any modern PHP framework, you'll need to install a few prerequisites to prepare for Laravel. </div>
+            <div><a href="https://cobee.space">https://cobee.space</a></div>
+        </div>
+    </div>
+    <div class="row pt-5">
+        <div class="col-4">
+            <img src="http://file3.instiz.net/data/cached_img/upload/2019/01/19/12/6f642126c76a673b9ec8952a0fbd0090.jpg" class="w-100"> 
+        </div>
+        <div class="col-4">
+            <img src="http://i2.linkoooo.com/1903/20190322221128_73271d8f5f7a987179cddc7b66ffd9fa_ztrp.jpg" class="w-100"> 
+        </div>
+        <div class="col-4">
+            <img src="https://www.bitcoissue.com/uploads/post/2018/09/913912d825496b58b70fd7aa3f3ceb5e.jpg" class="w-100"> 
         </div>
     </div>
 </div>
