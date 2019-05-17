@@ -25,7 +25,7 @@
     </div>
     <div class="row pt-5">
         <div class="col-4">
-            <img src="http://file3.instiz.net/data/cached_img/upload/2019/01/19/12/6f642126c76a673b9ec8952a0fbd0090.jpg" class="w-100"> 
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZuKfVlgxIhyXiVgOVxmn3jWBHu4L7_ZVMFXq-RNoDZeD-jG7j" class="w-100"> 
         </div>
         <div class="col-4">
             <img src="http://i2.linkoooo.com/1903/20190322221128_73271d8f5f7a987179cddc7b66ffd9fa_ztrp.jpg" class="w-100"> 
