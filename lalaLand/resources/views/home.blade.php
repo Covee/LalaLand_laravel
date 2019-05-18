@@ -11,7 +11,7 @@
         </div>
         <div class="col-8 pt-5">
             <div>
-                <h1>LoveLove Lion</h1>
+                <h1>{{ $user->username }}</h1>
             </div>
             <div class="d-flex">
                 <div class="pr-5"><strong>123</strong> posts</div>
