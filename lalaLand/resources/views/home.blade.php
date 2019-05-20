@@ -18,9 +18,9 @@
                 <div class="pr-5"><strong>45k</strong> followers</div>
                 <div class="pr-5"><strong>678</strong> following</div>
             </div>
-            <div class="pt-4 font-weight-bold">Images from KAKAO Co.</div>
-            <div>To embed your selected fonts into a webpage, copy this code into the of your HTML document. Like any modern PHP framework, you'll need to install a few prerequisites to prepare for Laravel. </div>
-            <div><a href="https://cobee.space">https://cobee.space</a></div>
+            <div class="pt-4 font-weight-bold">{{ $user->profile->title }}</div>
+            <div>{{ $user->profile->description }}</div>
+            <div><a href="#">{{ $user->profile->url }}</a></div>
         </div>
     </div>
     <div class="row pt-5">
