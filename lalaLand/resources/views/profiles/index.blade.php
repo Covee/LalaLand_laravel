@@ -25,15 +25,18 @@
         </div>
     </div>
     <div class="row pt-5">
-        <div class="col-4">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZuKfVlgxIhyXiVgOVxmn3jWBHu4L7_ZVMFXq-RNoDZeD-jG7j" class="w-100"> 
-        </div>
-        <div class="col-4">
+        @foreach ($user->posts as $post)
+            <div class="col-4">
+                <img src="/storage/{{ $post->image}}" class="w-100"> 
+            </div>
+        @endforeach
+        
+        {{-- <div class="col-4">
             <img src="http://i2.linkoooo.com/1903/20190322221128_73271d8f5f7a987179cddc7b66ffd9fa_ztrp.jpg" class="w-100"> 
         </div>
         <div class="col-4">
             <img src="https://www.bitcoissue.com/uploads/post/2018/09/913912d825496b58b70fd7aa3f3ceb5e.jpg" class="w-100"> 
-        </div>
+        </div> --}}
     </div>
 </div>
 @endsection

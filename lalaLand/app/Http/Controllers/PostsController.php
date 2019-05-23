@@ -11,7 +11,7 @@ class PostsController extends Controller
     {
         $this->middleware('auth');
     }
-    
+
 
     public function create()
     {
@@ -26,8 +26,14 @@ class PostsController extends Controller
             'image' => ['required', 'image'],
         ]);
 
-        auth()->user()->posts()->create($data);
+        // where to save the image that I uploaded via 'add new post'
+        $imagePath = request('image')->store('uploads', 'public');
 
-        dd(request()->all());
+        auth()->user()->posts()->create([
+            'caption' => $data['caption'],
+            'image' => $imagePath,
+        ]);
+
+        return redirect('/profile/ . auth()->user()->id');
     }
 }
