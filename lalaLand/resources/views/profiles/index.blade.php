@@ -27,16 +27,11 @@
     <div class="row pt-5">
         @foreach ($user->posts as $post)
             <div class="col-4 pb-4">
-                <img src="/storage/{{ $post->image}}" class="w-100"> 
+                <a href="/p/{{ $post->id }}" >
+                    <img src="/storage/{{ $post->image }}" class="w-100">     
+                </a>
             </div>
         @endforeach
-        
-        {{-- <div class="col-4">
-            <img src="http://i2.linkoooo.com/1903/20190322221128_73271d8f5f7a987179cddc7b66ffd9fa_ztrp.jpg" class="w-100"> 
-        </div>
-        <div class="col-4">
-            <img src="https://www.bitcoissue.com/uploads/post/2018/09/913912d825496b58b70fd7aa3f3ceb5e.jpg" class="w-100"> 
-        </div> --}}
     </div>
 </div>
 @endsection
