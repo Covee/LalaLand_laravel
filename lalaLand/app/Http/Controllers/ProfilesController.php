@@ -14,13 +14,15 @@ class ProfilesController extends Controller
 
     public function edit(User $user)
     {
-        $this->authorize('update', $user->profile);
-        
+        $this->authorize('update', $user->profile);     // need authorize to access
+
         return view('profiles.edit', compact('user'));
     }
 
     public function update(User $user)
     {
+        $this->authorize('update', $user->profile);     // need authorize to access
+
         $data = request()->validate([
             'title' => 'required',
             'description' => 'required',
