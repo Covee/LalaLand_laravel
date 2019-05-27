@@ -3,10 +3,10 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-4 p-4">
-            <img src="/img/lion.png"
-                class="rounded-circle"
-                width="250px" height="250px"
+        <div class="col-3 p-4">
+            <img src="/storage/{{ $user->profile->image }}"
+                class="rounded-circle w-100"
+                width="237px" height="237px"
             >
         </div>
         <div class="col-8 pt-5">
