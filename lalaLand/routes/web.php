@@ -17,8 +17,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/p/{post}', 'PostsController@show');
+// Sometimes the Route should be in proper order to be accessable correctly
 Route::get('/p/create', 'PostsController@create');
+Route::get('/p/{post}', 'PostsController@show');
 Route::post('/p', 'PostsController@store');
 
 Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
