@@ -13,7 +13,7 @@
             <div class="d-flex justify-content-between align-items-baseline">
                 <div class="d-flex align-items-center pb-3">
                     <div class="h3">{{ $user->username }}</div>
-                    <button class="btn btn-primary ml-3r mb-1">Follow</button>
+                    <follow-button></follow-button>
                 </div>
                 @can('update', $user->profile)
                     <a href="/p/create">Add New Post</a>
