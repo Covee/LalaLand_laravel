@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::post('follow/{user}', 'FollowsController@store');
+
 // Sometimes the Route should be in proper order to be accessable correctly
 Route::get('/p/create', 'PostsController@create');
 Route::get('/p/{post}', 'PostsController@show');
