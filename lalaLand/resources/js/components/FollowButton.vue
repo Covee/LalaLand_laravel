@@ -23,7 +23,11 @@
                 axios.post('/follow/1')
                     .then(response => {
                         this.status = ! this.status;
-                        
+                    })
+                    .catch(errors => {
+                        if (errors.response.status == 401) {
+                            window.location = '/login';
+                        }
                     });
             }
         },
