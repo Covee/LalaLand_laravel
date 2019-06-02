@@ -20,7 +20,7 @@
 
         methods: {
             followUser() {
-                axios.post('/follow/1')
+                axios.post('/follow/' + this.userId)
                     .then(response => {
                         this.status = ! this.status;
                     })
